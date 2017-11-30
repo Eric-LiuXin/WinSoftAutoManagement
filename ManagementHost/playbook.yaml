@@ -1,0 +1,40 @@
+---
+- hosts: windows
+
+  tasks:
+
+    - name: Install git
+      win_chocolatey:
+        name: git
+        state: present
+    
+    - name: Install java sdk 
+      win_chocolatey:
+        name: jdk8
+        state: present
+    
+    - name: Install ActivePerl 
+      win_chocolatey:
+        name: activeperl
+        state: present
+
+    - name: Install chrome
+      win_chocolatey:
+        name: googlechrome
+        state: present
+
+    - name: Install 7zip
+      win_chocolatey:
+        name: 7zip
+        state: present
+
+    - name: Install python3
+      win_chocolatey:
+        name: python3
+        state: present
+
+    - name: Install notepadplusplus
+      win_chocolatey:
+        name: notepadplusplus
+        state: present
+        
